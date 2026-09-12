@@ -1,0 +1,55 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="MIT"
+
+[[mods]]
+modId="bits_n_tracks"
+version= "1.4.86-fork"
+displayName="Bits 'n' Tracks (Fork)"
+authors="qwxon"
+description='''Create addon: flanged cogwheels with Sable physics for working tank tracks.'''
+
+[[mixins]]
+    config = "bits_n_tracks.mixins.json"
+
+[[dependencies.bits_n_tracks]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.219,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.bits_n_tracks]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.bits_n_tracks]]
+    modId="create"
+    type="required"
+    versionRange="[6.0.0,7.0.0)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.bits_n_tracks]]
+    modId="sable"
+    type="required"
+    versionRange="[2.0.0,2.1.0)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.bits_n_tracks]]
+    modId="bits_n_bobs"
+    type="required"
+    versionRange="[2.2.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.bits_n_tracks]]
+    modId="azimuth"
+    type="required"
+    versionRange="[1.4.0,)"
+    ordering="AFTER"
+    side="BOTH"
